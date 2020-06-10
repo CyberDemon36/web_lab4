@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Audi vehicle</title>
 </head>
 <body>
     <header>
+        
         <span class="menu">Меню</span>
-        <div>
-            <button class="button">Кнопка</button>
-            <button class="button">Кнопка</button>
-            <button class="button">Кнопка</button>
-            <button class="button">Кнопка</button>
+        <div class="burger ">
+            <a href="#" class="burger_btn">
+                <span class="burger_lines"></span>
+            </a>
+            <nav class="burger_nav">
+                <button class="button">Кнопка</button>
+                <button class="button">Кнопка</button>
+                <button class="button">Кнопка</button>
+                <button class="button">Кнопка</button>
+            </nav>
+            <div class="burger_overlay"></div>
         </div>
+        
         <img src="img/logo.png" alt="audi" width="100px" class="logo">
     </header>
     <section>
         <div class="perfomance">
             <div class="description">
                 <h1>Audi</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, perspiciatis praesentium deleniti, provident unde voluptatum exercitationem, minima aspernatur corporis quas accusamus? </p>
+                <p class="audi_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, perspiciatis praesentium deleniti, provident unde voluptatum exercitationem, minima aspernatur corporis quas accusamus? </p>
             </div>
         </div>
         <div class="colors"> 
@@ -42,7 +57,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eligendi animi saepe cupiditate veritatis maxime quasi! Enim est necessitatibus, blanditiis voluptate sed maiores! Dolore rem, ipsam iste labore ipsum qui.</p>
                 <button class="button">Кнопка</button>
             </div>
-            <div class="content_part">
+            <div class="content_part to_bottom">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eligendi animi saepe cupiditate veritatis maxime quasi! Enim est necessitatibus, blanditiis voluptate sed maiores! Dolore rem, ipsam iste labore ipsum qui.</p>
                 <button class="button">Кнопка</button>
             </div>
@@ -63,5 +78,6 @@
         </div>
         <div class="email">audi_The_BeSt@gmail.com</div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

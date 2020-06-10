@@ -9,7 +9,7 @@ header{
     align-items: center;
     background: linear-gradient(to bottom, #ffffff, #cacac9);
     box-sizing: border-box;
-    padding: 10px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 .button{
@@ -37,7 +37,7 @@ header{
     width: 100%;
 }
 .description {
-    width: 35%;
+    width: 45%;
     position: absolute;
     top: 10%;
     left: 10%;
@@ -133,7 +133,7 @@ footer {
     float: right;
 }
 
-@media screen and (max-width: 1060px)
+/* @media screen and (max-width: 1060px)
 {
     .black {
         height: 200px;
@@ -171,4 +171,186 @@ footer {
    .menu {
        font-size: 10px;
    }
-} 
+}  */
+
+
+
+
+@media (max-width:1060px) {
+    .black {
+        height: 200px;
+    }
+    .red {
+        height: 200px;
+    }
+    .yellow {
+        height: 200px;
+    }
+    .to_bottom {
+        margin-top: 45px;
+    }
+}
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width:768px) and (max-width:991px) {
+   
+}
+
+/* Landscape phones and portrait tablets */
+
+
+@media (max-width:809px) {
+    
+    .to_bottom {
+        margin-top: 0px;
+    }
+}
+
+
+@media (max-width:575px) {
+    .black {
+        height: 350px;
+    }
+    .red {
+        height: 350px;
+    }
+    .yellow {
+        height: 350px;
+    }
+    .button {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .logo{
+        width: 60px;
+    }
+    .menu {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:480px) {
+    .div_buttons {
+        display: none;
+    }
+    .burger_btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 30;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .burger_btn:hover .burger_lines{
+        filter: brightness(0.7);
+    }
+    .burger_lines,
+    .burger_lines::after,
+    .burger_lines::before {
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        background-color: white;
+    }
+    .burger_lines {
+        top: 50%;
+        right: -17%;
+        transform: translate(-50%,-50%);
+    }
+    .burger_lines::after{
+        content: "";
+        top: 12px;
+    }
+    .burger_lines::before {
+        content: "";
+        top: -12px;
+    }
+    .burger_active .burger_lines{
+        background-color: transparent;
+    }
+    .burger_active .burger_lines::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .burger_active .burger_lines::after{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .burger_nav {
+        border-radius: 3%;
+        padding-top: 80px;
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        background-color: #2a2a2a;
+        overflow-y: auto;
+        right: -100%;
+    }
+    
+    .burger_active .burger_nav {
+        right: 0;
+    }
+    .burger_link {
+        padding: 30px;
+        font-family: sans-serif;
+        font-size: 32px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bold;
+        color: white;
+    }
+    .burger_link:hover{
+        filter: brightness(0.7);
+    }
+    .burger_overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+    }
+    .burger_active .burger_overlay {
+        display: block;
+    }
+    .button {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    header {
+        justify-content: center;
+    }
+    .logo {
+        width: 200px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+
+
+
+/* Iphone 5 */
+@media (max-width:320px) {
+	.logo {
+        width: 150px;
+    }
+    .audi_descr {
+        font-size: 13px;
+    }
+}
